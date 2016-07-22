@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1>HHeelllloo JJSSPP</h1>
  현재시간: <%=new Date() %>
 </body>
 </html>
