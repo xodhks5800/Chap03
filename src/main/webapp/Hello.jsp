@@ -10,14 +10,14 @@
 </head>
 <body>
 <h1>HHeelllloo JJSSPP</h1>
- 현재시간: <%=new Date() %>
- 현재시간: <%=new Date() %>
+ 현재시간: <%=new Date() %><br>
+ 현재시간: <%=new Date() %><br>
+ <br>
+	name = <%= request.getParameter("name") %><br>
+	addr = <%= request.getParameter("addr")%><br>
+	HTTP METHOD = <%= request.getMethod() %><br>
+<br>	
 <h1>JSP는 호출시에 컴파일 된다.</h1> 
-
-<%
-for(int i=0; i<100; i++) {
-	out.println("i = " + i + "<br>");
-}
-%>
+<br>	
 </body>
 </html>

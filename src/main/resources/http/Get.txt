@@ -1,0 +1,83 @@
+GET / HTTP/1.0
+
+1.1부터는 host가 반드시있어야함
+
+
+
+GET / HTTP/1.1
+host:www.google.com:80
+
+telnet localhost 8080
+
+GET /Hello.html HTTP/1.1
+host:localhost:80
+
+GET /Hello.jsp HTTP/1.1
+host:localhost:80
+
+GET /deptList.jsp HTTP/1.1
+host:localhost:80
+
+			  ?쿼리문자열 &구분자
+GET /Hello.jsp?name=hong&addr=seoul HTTP/1.1
+host:localhost:8080
+
+get 장점 : 간단하다 , 단점 : URL에 노출이됨 
+
+POST /Hello.jsp HTTP/1.1
+host:localhost:8080
+Content-Length:27
+Content-Type:application/x-www-form-urlencoded
+
+name=hongkildong&addr=Busan
+
+post 장점 : 길이제한이없다
+
+request.jsp
+
+id = hong
+pw = 1234
+
+cmd =get,host 전문
+파폭 크롬 익스 
+
+GET /request.jsp?name=hong&pwd=1234 HTTP/1.1
+host:localhost:8080
+
+POST /request.jsp HTTP/1.1
+host:localhost:8080
+Content-Length:27
+Content-Type:application/x-www-form-urlencoded
+
+name=hong&pwd=1234
+
+
+GET /redirect.jsp HTTP/1.1
+host:localhost:8080
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
